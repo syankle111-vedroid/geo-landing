@@ -1,4 +1,5 @@
-import './Hero.scss'
+import './Hero.scss';
+import { COUNTRIES } from '../../constants/methods';
 
 export const Hero = () => {
   const scrollToCountries = () => {
@@ -6,7 +7,12 @@ export const Hero = () => {
   };
   return (
     <section className="hero">
-      <div className="hero__background"></div>
+      <div className="hero__background">
+        <div className="blob b1"></div>
+        <div className="blob b2"></div>
+        <div className="blob b3"></div>
+        <div className="blob b4"></div>
+      </div>
       <div className="hero__content">
         <header className="hero__header">
           <div className="hero__logo">
@@ -17,8 +23,8 @@ export const Hero = () => {
 
         <main className="hero__main">
           <h1 className="hero__title">
-            БЕЗОПАСНОСТЬ -
-            <br />
+            БЕЗОПАСНОСТЬ - {' '}
+            <br className="hero__desktop-br" />
             Превыше всего
           </h1>
           <p className="hero__subtitle">
@@ -49,6 +55,20 @@ export const Hero = () => {
         <div className="hero__footer">
           <span className="hero__scroll-text">ЛИСТАЙ ВНИЗ</span>
           <img src="/img/mouse.png" alt="Скролл вниз" className="hero__mouse" />
+        </div>
+      </div>
+      <div className="hero__marquee">
+        <div className="hero__marquee-content">
+          {[...Array(2)].map((_, i) => (
+            <div key={i} className="hero__marquee-group">
+              {COUNTRIES.map((country, index) => (
+                <span key={index} className="hero__marquee-item">
+                  {country.title}
+                  <span className="hero__marquee-dot">•</span>
+                </span>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
     </section>

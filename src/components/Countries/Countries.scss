@@ -37,10 +37,10 @@
   pointer-events: none; /* Let clicks pass through to the cards below */
 
   @media (max-width: 767px) {
-    top: 5px;
-    left: 20px;
-    right: 20px;
-    gap: 8px;
+    top: 14px;
+    left: 10px;
+    right: 10px;
+    gap: 4px;
   }
 }
 
@@ -63,8 +63,7 @@
   letter-spacing: 0.06em;
 
   @media (max-width: 767px) {
-    padding: 10px 16px;
-    font-size: 11px;
+    padding: 8px 14px;
   }
 
   &:hover {
