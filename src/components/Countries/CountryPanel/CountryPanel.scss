@@ -1,0 +1,249 @@
+.country-panel {
+  flex: 0 0 calc(100vw / 8);
+  padding: 126px 20px 0 20px;
+  container-type: inline-size;
+  transition: flex 0.6s cubic-bezier(0.25, 1, 0.5, 1), 
+              padding 0.6s ease,
+              min-height 0.6s cubic-bezier(0.25, 1, 0.5, 1),
+              max-height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  cursor: pointer;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  background: linear-gradient(
+    180deg, 
+    color-mix(in srgb, var(--main-color), white 20%) 0%, 
+    var(--main-color) 55%, 
+    color-mix(in srgb, var(--main-color), black 30%) 100%
+  );
+
+  @media (max-width: 1024px) {
+    flex: 0 0 calc(100vw / 5);
+  }
+
+  @media (max-width: 767px) {
+    flex: 0 0 auto;
+    width: 100%;
+    min-height: 66px;
+    max-height: 66px;
+    padding: 0 20px;
+    justify-content: center;
+  }
+
+  &.active {
+    flex: 1 0 calc(100vw * 5 / 8);
+    
+    align-items: flex-start;
+    padding: 126px 80px 0 80px;
+    cursor: default;
+    box-shadow: 0px 0px 46px -8px rgba(0, 0, 0, 0.42);
+    z-index: 10;
+
+    @media (max-width: 1024px) {
+      flex: 1 0 calc(100vw * 3 / 5);
+    }
+    
+    @media (max-width: 767px) {
+      flex: 1 0 auto;
+      width: 100%;
+      min-height: calc(100vh - 198px);
+      max-height: 2500px; /* Large enough to fit any content, small enough to animate reasonably */
+      padding: 40px 20px 40px 20px;
+      justify-content: flex-start;
+      box-shadow: none;
+      z-index: 1;
+    }
+
+    .country-panel__bg-code {
+      opacity: 0.1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .country-panel__president {
+      height: 65vh;
+      width: auto;
+      bottom: 0;
+      left: auto;
+      right: 91px;
+      transform: none;
+    }
+  }
+
+  &__bg-code {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+    font-size: 300px;
+    line-height: 100%;
+    letter-spacing: -0.05em;
+    color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    white-space: nowrap;
+    z-index: -1;
+
+    @media (max-width: 767px) {
+      font-size: 50vw;
+    }
+  }
+
+  &__top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media (max-width: 767px) {
+      flex-direction: row;
+      justify-content: center;
+      gap: 16px;
+    }
+  }
+
+  &.active &__top {
+    align-items: flex-start;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+    }
+  }
+
+  &__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    margin-bottom: 30px;
+    transition: font-size 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 800;
+      font-size: 9px;
+      line-height: 100%;
+      letter-spacing: 0.16em;
+    }
+  }
+
+  &.active &__badge {
+    font-size: 12px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 16px;
+      margin-top: 10px;
+    }
+  }
+
+  &__flag {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1), height 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  &.active &__flag {
+    width: 18px;
+    height: 18px;
+  }
+
+  &__title {
+    font-family: 'Unbounded', sans-serif;
+    font-weight: 900;
+    font-size: 22px; /* Fallback */
+    font-size: min(22px, calc((100cqw - 40px) / (var(--char-count) * 0.7)));
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    margin: 0;
+    text-transform: uppercase;
+    transition: font-size 0.6s cubic-bezier(0.25, 1, 0.5, 1), margin 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+
+    @media (max-width: 767px) {
+      font-family: 'Unbounded', sans-serif;
+      font-weight: 700;
+      font-size: min(20px, calc((100vw - 180px) / (var(--char-count) * 0.95))); /* 180px safely accounts for large badges */
+      line-height: 100%;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  &.active &__title {
+    font-size: 78px; /* Fallback */
+    font-size: min(78px, calc((100cqw - 160px) / (var(--char-count) * 0.7)));
+    margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+      font-size: min(58px, calc((100vw - 40px) / (var(--char-count) * 0.95)));
+      margin-bottom: 30px;
+    }
+  }
+
+  &__active-content {
+    width: 100%;
+    flex: 1;
+    overflow-y: auto;
+    /* Hide scrollbar for a cleaner look */
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @media (max-width: 767px) {
+      overflow-y: visible;
+      flex: 0 0 auto;
+    }
+  }
+
+
+  &__president {
+    position: absolute;
+    bottom: 0;
+    right: 12px;
+    width: calc(100% - 24px);
+    height: 35vh;
+    object-fit: contain;
+    object-position: bottom;
+    transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+    z-index: -1;
+    pointer-events: none;
+    opacity: 1;
+
+    @media (max-width: 767px) {
+      opacity: 0;
+    }
+  }
+
+  &.active &__president {
+    opacity: 1;
+    bottom: -60px;
+    right: 0;
+    
+    @media (max-width: 767px) {
+      opacity: 0;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Manrope', sans-serif;
+  background-color: #0b0c10;
+  color: #ffffff;
+  overflow: hidden; /* Prevent body scroll, handle scroll in scroll-container */
+}
