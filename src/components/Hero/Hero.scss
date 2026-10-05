@@ -203,11 +203,10 @@
   }
   &__marquee {
     position: absolute;
-    bottom: 100px;
+    bottom: 110px;
     left: 0;
     width: 100%;
     overflow: hidden;
-    display: flex;
     white-space: nowrap;
     z-index: 1; /* Place above background but below content */
     user-select: none;
@@ -220,12 +219,15 @@
   &__marquee-content {
     display: flex;
     width: max-content;
+    flex-shrink: 0;
+    will-change: transform;
     animation: scrollMarquee 40s linear infinite;
   }
 
   &__marquee-group {
     display: flex;
     align-items: center;
+    flex-shrink: 0;
   }
 
   &__marquee-item {
@@ -268,8 +270,8 @@
 }
 
 @keyframes scrollMarquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
 }
 
 @keyframes fadeUp {
