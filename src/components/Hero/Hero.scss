@@ -92,6 +92,12 @@
     }
   }
 
+  &__desktop-br {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
   &__button {
     display: flex;
     align-items: center;

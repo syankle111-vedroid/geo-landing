@@ -22,8 +22,8 @@ export const Hero = () => {
             Превыше всего
           </h1>
           <p className="hero__subtitle">
-            Secure предоставляет платежные решения, в более чем <br /> 20-ти
-            странах земного шара. «Запроцессим даже в<br /> Северной Корее» -
+            Secure предоставляет платежные решения, в более чем <br className="hero__desktop-br" /> 20-ти
+            странах земного шара. «Запроцессим даже в<br className="hero__desktop-br" /> Северной Корее» -
             Founder
           </p>
           <button className="hero__button" onClick={scrollToCountries}>
