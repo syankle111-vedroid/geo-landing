@@ -1,12 +1,22 @@
 import { useState, useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import { CountryPanel } from './CountryPanel/CountryPanel';
 import './Countries.scss';
 
 import { COUNTRIES, type Region } from '../../constants/methods';
 
+const REGIONS_KEYS: Record<string, string> = {
+  'Все': 'all',
+  'СНГ': 'cis',
+  'Азия': 'asia',
+  'Америка': 'america',
+  'Африка': 'africa'
+};
+
 const REGIONS: (Region | 'Все')[] = ['Все', 'СНГ', 'Азия', 'Америка', 'Африка'];
 
 export const Countries = () => {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const [activeRegion, setActiveRegion] = useState<Region | 'Все'>('Все');
   const containerRef = useRef<HTMLElement>(null);
@@ -88,7 +98,7 @@ export const Countries = () => {
               }
             }}
           >
-            {region}
+            {t(`regions.${REGIONS_KEYS[region]}`)}
           </button>
         ))}
       </div>

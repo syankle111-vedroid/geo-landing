@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { Methods } from '../Methods/Methods';
 import './CountryPanel.scss';
 
@@ -18,6 +19,8 @@ interface CountryPanelProps {
 }
 
 export const CountryPanel = ({ country, isActive, onClick }: CountryPanelProps) => {
+  const { t } = useTranslation();
+  
   return (
     <div 
       className={`country-panel ${isActive ? 'active' : ''}`}
@@ -36,7 +39,7 @@ export const CountryPanel = ({ country, isActive, onClick }: CountryPanelProps) 
            {country.code}
         </div>
         
-        <h2 className="country-panel__title">{country.title}</h2>
+        <h2 className="country-panel__title">{t(`countries.${country.id}`, { defaultValue: country.title })}</h2>
         
         {isActive && (
           <div className="country-panel__active-content">

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { METHODS_DATA } from '../../../constants/methods';
 import './Methods.scss';
 
@@ -7,6 +8,7 @@ interface MethodsProps {
 }
 
 export const Methods = ({ countryId }: MethodsProps) => {
+  const { t } = useTranslation();
   const [openId, setOpenId] = useState<string | null>(null);
   const methods = METHODS_DATA[countryId] || [];
 
@@ -24,7 +26,9 @@ export const Methods = ({ countryId }: MethodsProps) => {
             onClick={() => setOpenId(isOpen ? null : method.id)}
           >
             <div className="methods__header">
-              <span className="methods__title">{method.title}</span>
+              <span className="methods__title">
+                {t(`methodsData.${countryId}.${method.id}.title`, { defaultValue: method.title })}
+              </span>
               <img 
                 src="/img/arrow-bottom.png" 
                 alt="arrow" 
@@ -35,7 +39,7 @@ export const Methods = ({ countryId }: MethodsProps) => {
             <div className="methods__content-wrapper">
               <div 
                 className="methods__content"
-                dangerouslySetInnerHTML={{ __html: method.content }}
+                dangerouslySetInnerHTML={{ __html: t(`methodsData.${countryId}.${method.id}.content`, { defaultValue: method.content }) }}
               />
             </div>
           </div>

@@ -1,0 +1,247 @@
+{
+  "hero": {
+    "title1": "SECURITY - ",
+    "title2": "Above all",
+    "subtitle1": "Secure provides payment solutions in more than ",
+    "subtitle2": " 20 countries worldwide. \"We'll process even in",
+    "subtitle3": " North Korea\" - Founder",
+    "cta": "Go to offers",
+    "scroll": "SCROLL DOWN"
+  },
+  "regions": {
+    "all": "All",
+    "cis": "CIS",
+    "asia": "Asia",
+    "america": "America",
+    "africa": "Africa"
+  },
+  "countries": {
+    "russia": "Russia",
+    "kazakhstan": "Kazakhstan",
+    "mexico": "Mexico",
+    "chile": "Chile",
+    "azerbaijan": "Azerbaijan",
+    "uzbekistan": "Uzbekistan",
+    "kyrgyzstan": "Kyrgyzstan",
+    "tajikistan": "Tajikistan",
+    "armenia": "Armenia",
+    "argentina": "Argentina",
+    "south-korea": "South Korea",
+    "india": "India",
+    "turkey": "Turkey",
+    "bangladesh": "Bangladesh",
+    "south-africa": "South Africa",
+    "nigeria": "Nigeria",
+    "vietnam": "Vietnam",
+    "uae": "UAE",
+    "bahrain": "Bahrain",
+    "saudi-arabia": "Saudi Arabia",
+    "china": "China",
+    "mongolia": "Mongolia",
+    "colombia": "Colombia",
+    "venezuela": "Venezuela",
+    "brazil": "Brazil",
+    "peru": "Peru"
+  },
+  "methods": {
+    "fee": "Fee",
+    "limit": "Limits",
+    "integration": "Integration",
+    "hold": "Hold/rolling",
+    "categories": "Categories"
+  },
+  "methodsData": {
+    "russia": {
+      "sbp-cards-pdf": {
+        "title": "SBP + Cards (with PDF)",
+        "content": "\n        <span class=\"highlight\">Transactional limits:</span><br/>\n        min TX amount in - 1.000₽<br/>\n        max TX amount in - 40.000₽<br/>\n        <span class=\"highlight\">Fee:</span><br/>\n        Fee currency - USD $<br/>\n        Fee in% - 11%<br/>\n        Settlement fee - 0%<br/>\n        Settlement period - T+0<br/>\n        Settlement limit - no limit<br/>\n        <span class=\"highlight\">Currency exchange source (with screenshot, link and detailed description) -</span><br/>\n        PayIN: Rapira top 1 red\n      "
+      },
+      "psb-psb": {
+        "title": "PSB-PSB",
+        "content": "\n        <span class=\"highlight\">Transactional limits:</span><br/>\n        min TX amount in - 100₽ / max TX amount in - 5.000₽<br/>\n        min TX amount out- 10.000₽ / max TX amount out - 150.000₽<br/>\n        <span class=\"highlight\">Fee:</span><br/>\n        Currency - USD $ / Fee in% - 13% / Fee out% - 2% / Settlement fee - 0%<br/>\n        <span class=\"highlight\">Settlement:</span><br/>\n        Settlement period - T+0<br/>\n        Settlement limit - no limit<br/>\n        <span class=\"highlight\">Currency exchange source:</span><br/>\n        PayIN: Rapira top 1\n      "
+      },
+      "monobank-alfalfa": {
+        "title": "Monobank/Internal (Alfa-Alfa)",
+        "content": "\n        <span class=\"highlight\">Transactional limits:</span><br/>\n        min TX amount in - 5.000₽ / max TX amount in - 250.000₽<br/>\n        min TX amount out- 10.000₽ / max TX amount out - 150.000₽<br/>\n        <span class=\"highlight\">Fee:</span><br/>\n        Currency - USD $ / Fee in% - 12% / Fee out% - 2%<br/>\n        <span class=\"highlight\">Settlement:</span><br/>\n        Settlement (USDT/netting)<br/>\n        Settlement fee - 0%<br/>\n        Settlement period - T+0<br/>\n        Settlement limit - no limit<br/>\n        <span class=\"highlight\">Currency exchange source:</span><br/>\n        PayIN: Rapira Top 1 red glass\n      "
+      },
+      "nspk-qr-rub": {
+        "title": "NSPK QR RUB",
+        "content": "\n        <span class=\"highlight\">Resources and infrastructure:</span><br/>\n        Details, directly from the bank without blocks and with the possibility of increasing limits. Volume: from 25 M to 150 M RUB per day with the possibility of increasing limits<br/>\n        <span class=\"highlight\">Rates and limits:</span><br/>\n        STD(from 15 deposits, without details appearing in the payment gateway):<br/>\n        Pay-in: 1000 – 3000 RUB<br/>\n        (min/max tx amount can be changed after tests, we can also add FTD after tests) → 14%<br/>\n        Pay-out 2: 10.000-150.000 (in 1 tx) - 3%<br/>\n        <span class=\"highlight\">Settlement:</span><br/>\n        Currency: USDT<br/>\n        Frequency: Т+0<br/>\n        Settlement fee: 0<br/>\n        <span class=\"highlight\">Currency exchange source:</span><br/>\n        Pay IN: rapira top 1 red\n      "
+      },
+      "white-triangle": {
+        "title": "White Triangle",
+        "content": "\n        SBP + Cards P2P<br/>\n        <span class=\"highlight\">Transactional limits:</span><br/>\n        min TX amount in - 5.000₽ / max TX amount in - 200.000₽<br/>\n        <span class=\"highlight\">Fee:</span><br/>\n        Fee currency - USD $<br/>\n        Fee in% - 10.5%<br/>\n        <span class=\"highlight\">Settlement:</span><br/>\n        Settlement fee - 0%<br/>\n        Settlement period - T+0<br/>\n        Settlement limit - no limit<br/>\n        <span class=\"highlight\">Currency exchange source:</span><br/>\n        PayIN: Rapira + 10\n      "
+      }
+    },
+    "kazakhstan": {
+      "kaz-main": {
+        "title": "Bank Cards / Mobile",
+        "content": "\n        <span class=\"highlight\">Pay In Rate:</span> 9%<br/>\n        <span class=\"highlight\">Rate:</span> xe.com USD/KZT+5%<br/>\n        <span class=\"highlight\">Methods work:</span> card number, phone number<br/>\n        <span class=\"highlight\">Min amount:</span> 20000 kzt\n      "
+      }
+    },
+    "mexico": {
+      "mex-visa-mc": {
+        "title": "Visa/MasterCard | Ecom",
+        "content": "\n        MDR Incoming: 13,5%<br/>\n        <span class=\"highlight\">Trx fee:</span><br/>\n        Successful: 0.40 EUR<br/>\n        Declined: 0.20 EUR<br/>\n        CHB Fee: 40 EUR / Refund Fee: 15 EUR<br/>\n        <span class=\"highlight\">Settlement:</span><br/>\n        500K+ — T+1<br/>\n        200K–500K — T+2<br/>\n        up to 200K — T+3<br/>\n        Ready to accept unlimited traffic volumes\n      "
+      },
+      "mex-bank-transfer": {
+        "title": "Bank Transfer (SPEI, OPM)",
+        "content": "\n        FTD+STD<br/>\n        <span class=\"highlight\">Pay IN:</span> 6.5% + 5 MXN<br/>\n        <span class=\"highlight\">Pay OUT:</span> 2.5% + 5 MXN<br/>\n        <span class=\"highlight\">Cycle:</span> T+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 20 / Max 20 000<br/>\n        <span class=\"highlight\">Settlement:</span> 0%<br/>\n        <span class=\"highlight\">Settlement Exchange:</span> XE + 1-2%\n      "
+      }
+    },
+    "chile": {
+      "chl-bank-transfer": {
+        "title": "Bank Transfer",
+        "content": "\n        FTD+STD<br/>\n        <span class=\"highlight\">Pay IN:</span> 10%<br/>\n        <span class=\"highlight\">Pay OUT:</span> 6.5%<br/>\n        <span class=\"highlight\">Cycle:</span> T+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 1000 / Max 8 000 000<br/>\n        <span class=\"highlight\">Settlement:</span> 1%<br/>\n        <span class=\"highlight\">Settlement exchange:</span> XE + 1-2%\n      "
+      }
+    },
+    "azerbaijan": {
+      "aze-p2p": {
+        "title": "Pay In (P2P)",
+        "content": "\n        Processing currency: AZN | Traffic type: STD | Balance: usdt<br/>\n        <span class=\"highlight\">Tariff:</span><br/>\n        Pay In: Pay in - 10%<br/>\n        Pay Out: Payout - 3.5%, USDT - 0% + network fee, Т+0<br/>\n        <span class=\"highlight\">Conversion rate:</span> Fix rate - 1.75<br/>\n        <span class=\"highlight\">Transaction limits:</span><br/>\n        Pay In: from 5 AZN up to 3500 AZN per tx<br/>\n        Pay Out: from 20 AZN up to 3500 AZN per tx<br/>\n        <span class=\"highlight\">Additional terms:</span><br/>\n        Integration method: API/H2H | Categories: Gambling, Betting | Uptime: 24/7\n      "
+      },
+      "aze-ecom": {
+        "title": "AZN (Quasi E-com)",
+        "content": "\n        Processing currency: AZN | Traffic type: STD | Balance: usdt<br/>\n        <span class=\"highlight\">Tariff:</span><br/>\n        Pay In: Pay in - 11.5%<br/>\n        Pay Out: Payout - 3.5%, USDT - 0% + network fee, Т+0<br/>\n        <span class=\"highlight\">Conversion rate:</span> Fix rate - 1.75<br/>\n        <span class=\"highlight\">Transaction limits:</span><br/>\n        Pay In: from 30 AZN up to 3000 AZN per tx<br/>\n        Pay Out: from 40 AZN up to 3000 AZN per tx<br/>\n        <span class=\"highlight\">Additional terms:</span><br/>\n        Integration method: API/H2H | Categories: Gambling, Betting | Uptime: 24/7\n      "
+      }
+    },
+    "uzbekistan": {
+      "uzb-p2p": {
+        "title": "P2P",
+        "content": "\n        Processing currency: UZS | Balance: USDT<br/>\n        Traffic type: STD (FTD — only after 2 weeks of work on STD and prior approval)<br/>\n        <span class=\"highlight\">Tariff:</span><br/>\n        Pay In: Pay in - 7%<br/>\n        Pay Out: Payout - 3.5%, USDT - 0% + network fee, Т+0<br/>\n        <span class=\"highlight\">Conversion rate:</span> Pay IN Central Bank + 5.5% / Pay OUT Central Bank + 4.5%<br/>\n        <span class=\"highlight\">Transaction limits:</span><br/>\n        Pay In: from 30 000 UZS up to 10 000 000 UZS<br/>\n        Pay Out: from 30 000 UZS up to 10 000 000 UZS<br/>\n        <span class=\"highlight\">Additional terms:</span><br/>\n        Integration method: API / H2H | Permitted categories: Gambling, Betting\n      "
+      }
+    },
+    "kyrgyzstan": {
+      "kgz-p2p": {
+        "title": "(P2P) DeepLink",
+        "content": "\n        Processing currency: KGS | Balance: USDT | IPS: P2P<br/>\n        up toступные banks: М-Bank, Bakai, KICB (по QR), O!bank, Demirbank, MegaPay<br/>\n        Traffic type: STD (FTD — по согласованию)<br/>\n        <span class=\"highlight\">Tariff:</span><br/>\n        Pay In: Pay in - 8.5%<br/>\n        Pay Out: Payout - 4%, USDT - 0% + network fee, Т+0<br/>\n        <span class=\"highlight\">Conversion rate:</span> Bybit, Buy, min 100 000 KGS, avg 1-3<br/>\n        <span class=\"highlight\">Transaction limits:</span><br/>\n        Pay In / Pay Out: from 300 up to 200 000 KGS<br/>\n        <span class=\"highlight\">Additional terms:</span><br/>\n        Integration method: API | Permitted categories: Gambling, Betting\n      "
+      }
+    },
+    "tajikistan": {
+      "tjk-c2c": {
+        "title": "TJS (C2C / phone number)",
+        "content": "\n        Processing currency: TJS | Traffic type: FTD/STD | Balance: USDT<br/>\n        <span class=\"highlight\">Tariff:</span><br/>\n        Pay In: Pay in - 8.5%<br/>\n        Pay Out: Payout - 2%, USDT - 0% + network fee, Т+0<br/>\n        <span class=\"highlight\">Transaction limits:</span><br/>\n        Pay In / Pay Out: from 50 TJS up to 10000 TJS<br/>\n        <span class=\"highlight\">Additional terms:</span><br/>\n        Integration method: API | Permitted categories: Gambling, Betting\n      "
+      }
+    },
+    "armenia": {
+      "arm-c2c": {
+        "title": "AMD С2С",
+        "content": "\n        Processing currency: AMD | Traffic type: STD (FTD по согласованию) | Balance: USDT<br/>\n        <span class=\"highlight\">Tariff (Pay In):</span><br/>\n        FTD: С2С - 11.5% | E-wallets (fastshift) - 11.5%<br/>\n        STD: С2С - 9% | E-wallets (fastshift) - 9.5%<br/>\n        <span class=\"highlight\">Tariff (Pay Out):</span> С2С - 3% | E-wallets - 3.5%<br/>\n        <span class=\"highlight\">Settlement:</span> USDT - 0,5% + network fee, Т+0<br/>\n        <span class=\"highlight\">Pay-out Conversion rate:</span> AMD/USDT Bybit, Sell, 5th position<br/>\n        <span class=\"highlight\">Limits:</span> from 2 000 AMD up to 250 000 AMD<br/>\n        <span class=\"highlight\">Additional terms:</span><br/>\n        Integration: API/H2H | Hold/rolling: нет | Categories: Gambling, Betting<br/>\n        Under FTD traffic needs new account.\n      "
+      }
+    },
+    "argentina": {
+      "arg-p2p": {
+        "title": "Mercado Pago P2P",
+        "content": "\n        Method: ARS<br/>\n        <span class=\"highlight\">Payin:</span> 5%<br/>\n        <span class=\"highlight\">Payout:</span> 1.5%<br/>\n        <span class=\"highlight\">Settlement:</span> 0%<br/>\n        <span class=\"highlight\">Exchange rate:</span> Bybit P2P<br/>\n        <span class=\"highlight\">Payin min/max:</span> 5000 - 1 000 000\n      "
+      }
+    },
+    "south-korea": {
+      "kor-trusted": {
+        "title": "Korea Fenito (Trusted)",
+        "content": "\n        Method: Bank transfer<br/>\n        <span class=\"highlight\">FEES:</span><br/>\n        • Pay-in: 10%<br/>\n        • Pay-out: 3.5%<br/>\n        • Settlement: 8%; T+0; Google<br/>\n        <span class=\"highlight\">LIMITS:</span><br/>\n        • Pay-in/out: 30 000–3 000 000<br/>\n        <span class=\"highlight\">Details:</span><br/>\n        Balance: USDT | Refund: 1:1 | Traffic type: Trusted<br/>\n        <span class=\"highlight\">Pay In:</span> HTX buy from 120,000 3 position<br/>\n        <span class=\"highlight\">Pay out:</span> HTX sell from 2,000,000 2-3 position\n      "
+      },
+      "kor-ftd": {
+        "title": "Korea Fenito (FTD)",
+        "content": "\n        Method: Bank transfer<br/>\n        <span class=\"highlight\">FEES:</span><br/>\n        • Pay-in: 11.5%<br/>\n        • Pay-out: 3.5%<br/>\n        • Settlement: 8%; T+0; Google<br/>\n        <span class=\"highlight\">LIMITS:</span><br/>\n        • Pay-in/out: 30 000–3 000 000<br/>\n        <span class=\"highlight\">Details:</span><br/>\n        Balance: USDT | Refund: 1:1 | Traffic type: FTD\n      "
+      },
+      "kor-std": {
+        "title": "Korea Fenito STD",
+        "content": "\n        Method: Kakao QR<br/>\n        <span class=\"highlight\">FEES:</span><br/>\n        • Pay-in: 11.5%<br/>\n        • Pay-out: 3.5%<br/>\n        • Settlement: 8%; T+0; Google<br/>\n        <span class=\"highlight\">LIMITS:</span><br/>\n        • Pay-in: 30 000–1 500 000<br/>\n        • Pay-out: 30 000–3 000 000<br/>\n        <span class=\"highlight\">Details:</span> Balance: USDT\n      "
+      }
+    },
+    "india": {
+      "ind-upi": {
+        "title": "UPI Bank / E-wallet transfer",
+        "content": "\n        <span class=\"highlight\">Pay IN:</span> 10%<br/>\n        <span class=\"highlight\">Pay OUT:</span> 5% + 10 INR<br/>\n        <span class=\"highlight\">Cycle:</span> T+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 100 / Max 50 000<br/>\n        <span class=\"highlight\">Settlement:</span> 0%<br/>\n        <span class=\"highlight\">Settlement exchange:</span> Floating rate ≈ 105 INR/USDT\n      "
+      },
+      "ind-mixed": {
+        "title": "UPI, QR, Mixed",
+        "content": "\n        up toп. инфо: Paytm, PhonePe<br/>\n        <span class=\"highlight\">Pay IN:</span> 10%<br/>\n        <span class=\"highlight\">Pay OUT:</span> 5%<br/>\n        <span class=\"highlight\">Cycle:</span> T+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 300 / Max 50 000<br/>\n        <span class=\"highlight\">Settlement:</span> 0%<br/>\n        <span class=\"highlight\">Settlement exchange:</span> Offline market\n      "
+      }
+    },
+    "turkey": {
+      "tur-bank": {
+        "title": "Bank Transfer",
+        "content": "\n        Type of traffic: FTD/STD | Currency: TRY<br/>\n        <span class=\"highlight\">PayIn:</span> 6,4%<br/>\n        min TX - 100 TRY / max TX - 100.000 TRY<br/>\n        <span class=\"highlight\">PayOut:</span> 1,1%<br/>\n        min TX - 500 TRY / max TX - 100.000 TRY<br/>\n        <span class=\"highlight\">Settlement:</span> USDT 0%, T+0, xe.com +3% TRY/USD\n      "
+      }
+    },
+    "bangladesh": {
+      "bgd-p2p": {
+        "title": "P2P",
+        "content": "\n        <span class=\"highlight\">PayIn:</span> 9 %<br/>\n        <span class=\"highlight\">Payout:</span> 2 %<br/>\n        <span class=\"highlight\">Limits payIN/OUT:</span> Min 500 taka / Max 50k taka<br/>\n        <span class=\"highlight\">Settle:</span> T+0 + 5 USDT<br/>\n        <span class=\"highlight\">Exchange rate:</span> Binance + 1,5%\n      "
+      }
+    },
+    "south-africa": {
+      "zaf-eft": {
+        "title": "EFT",
+        "content": "\n        <span class=\"highlight\">Payin:</span> 8%<br/>\n        <span class=\"highlight\">Payout:</span> 2.5%<br/>\n        <span class=\"highlight\">Cycle:</span> T+0<br/>\n        <span class=\"highlight\">Limits:</span> Min ZAR 150 / Max ZAR 1 500 000\n      "
+      }
+    },
+    "nigeria": {
+      "nga-mpesa": {
+        "title": "Mpesa",
+        "content": "\n        <span class=\"highlight\">Payin:</span> 8%<br/>\n        <span class=\"highlight\">Payout:</span> 2.5%<br/>\n        <span class=\"highlight\">Limits:</span> Min 1500 NGN / Max 1 500 000 NGN\n      "
+      }
+    },
+    "vietnam": {
+      "vnm-momo": {
+        "title": "Electronic wallet MOMO",
+        "content": "\n        <span class=\"highlight\">Pay-in:</span> 8,5%<br/>\n        <span class=\"highlight\">Pay-out:</span> 4%<br/>\n        <span class=\"highlight\">Cycle:</span> t+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 20,000 / Max 50,000,000<br/>\n        <span class=\"highlight\">Settlements:</span> 1%<br/>\n        <span class=\"highlight\">Settlement rate:</span> Binance, P2P (VND), Bank Transfer, Sell, 1-5th position\n      "
+      }
+    },
+    "uae": {
+      "uae-p2p": {
+        "title": "Multi Banks (Mashreq and others)",
+        "content": "\n        Type: P2P | Traffic Type: FTD / STD | Vertical: iGaming<br/>\n        <span class=\"highlight\">Commission:</span> IN 12% / OUT 5%<br/>\n        <span class=\"highlight\">Limits:</span> IN 100 - 10,000 AED / OUT 100 - 10,000 AED<br/>\n        <span class=\"highlight\">Settlement:</span> T+0 | Fee: 0% / +8 USDT при settlement менее 3,000 USDT<br/>\n        <span class=\"highlight\">Exchange Rate:</span> Binance, green glass, approved merchant, middle 5–10 orders, 3,800<br/>\n        <span class=\"highlight\">Working Time:</span> 24/7\n      "
+      }
+    },
+    "bahrain": {
+      "bhr-p2p": {
+        "title": "Benefit Pay",
+        "content": "\n        Type: P2P | Traffic Type: FTD / STD | Vertical: iGaming<br/>\n        <span class=\"highlight\">Commission:</span> IN 12% / OUT 4.5%<br/>\n        <span class=\"highlight\">Limits:</span> IN 2 - 1,000 BHD / OUT 2 - 1,000 BHD<br/>\n        <span class=\"highlight\">Settlement:</span> T+0 | Fee: 0% / +8 USDT при settlement менее 3,000 USDT<br/>\n        <span class=\"highlight\">Exchange Rate:</span> Binance, green glass, approved merchant, middle 5–10 orders<br/>\n        <span class=\"highlight\">Working Time:</span> 24/7\n      "
+      }
+    },
+    "saudi-arabia": {
+      "sau-p2p": {
+        "title": "BARQ",
+        "content": "\n        Type: P2P | Traffic Type: FTD / STD | Vertical: iGaming<br/>\n        <span class=\"highlight\">Commission:</span> IN 12% / OUT 4.5%<br/>\n        <span class=\"highlight\">Limits:</span> IN 5 - 3,000 SAR / OUT 5 - 3,000 SAR<br/>\n        <span class=\"highlight\">Settlement:</span> T+0 | Fee: 0% / +8 USDT при settlement менее 3,000 USDT<br/>\n        <span class=\"highlight\">Exchange Rate:</span> Binance, green glass, approved merchant, middle 5–10 orders<br/>\n        <span class=\"highlight\">Working Time:</span> 24/7\n      "
+      }
+    },
+    "china": {
+      "chn-alipay-wechat": {
+        "title": "Alipay, WeChat",
+        "content": "\n        <span class=\"highlight\">Pay IN:</span> 7.5%<br/>\n        Min: 100 CNY / Max: 100,000 CNY<br/>\n        <span class=\"highlight\">Pay OUT:</span> 2%<br/>\n        Min: 1000 CNY / Max: 100,000 CNY<br/>\n        <span class=\"highlight\">Settlement:</span> 0%\n      "
+      }
+    },
+    "mongolia": {
+      "mng-banks": {
+        "title": "Khan Bank, Capitron Bank, State Bank",
+        "content": "\n        <span class=\"highlight\">Pay-In:</span><br/>\n        • Base rate: 11%<br/>\n        • Limits: 5000 - 4000000 MNT<br/>\n        <span class=\"highlight\">Pay-Out:</span><br/>\n        • Base rate: 4.5%<br/>\n        • Limits: 5000 - 4000000 MNT<br/>\n        <span class=\"highlight\">Settlement exchange:</span> Binance (avg 1-10 lines)\n      "
+      }
+    },
+    "colombia": {
+      "col-pse": {
+        "title": "Bank transfer PSE",
+        "content": "\n        <span class=\"highlight\">Pay IN:</span> 9.5%<br/>\n        <span class=\"highlight\">Pay OUT:</span> 5%<br/>\n        <span class=\"highlight\">Cycle:</span> T+1<br/>\n        <span class=\"highlight\">Limits:</span> Min 10 000 / Max 5 000 000<br/>\n        <span class=\"highlight\">Settlement:</span> 3.6%<br/>\n        <span class=\"highlight\">Settlement exchange:</span> xe\n      "
+      }
+    },
+    "venezuela": {
+      "ven-p2p": {
+        "title": "P2P Bank Transfer",
+        "content": "\n        <span class=\"highlight\">Pay IN:</span> 10%<br/>\n        <span class=\"highlight\">Pay OUT:</span> 5%<br/>\n        <span class=\"highlight\">Cycle:</span> T+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 5000 / Max 300 000<br/>\n        <span class=\"highlight\">Settlement:</span> 0%<br/>\n        <span class=\"highlight\">Settlement exchange:</span> xe.com\n      "
+      }
+    },
+    "brazil": {
+      "bra-pix": {
+        "title": "PIX",
+        "content": "\n        <span class=\"highlight\">Pay IN:</span> 5.5%<br/>\n        <span class=\"highlight\">Pay OUT:</span> 1.5%<br/>\n        <span class=\"highlight\">Cycle:</span> t+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 10 / Max 99 999<br/>\n        <span class=\"highlight\">Settlement:</span> 2%<br/>\n        <span class=\"highlight\">Settlement exchange:</span> Binance C2C\n      "
+      }
+    },
+    "peru": {
+      "per-bank": {
+        "title": "Bank Transfer",
+        "content": "\n        <span class=\"highlight\">Pay IN:</span> 9%<br/>\n        <span class=\"highlight\">Pay OUT:</span> 3.5%<br/>\n        <span class=\"highlight\">Cycle:</span> t+0<br/>\n        <span class=\"highlight\">Limits:</span> Min 10 / Max 40 000<br/>\n        <span class=\"highlight\">Settlement:</span> 0%<br/>\n        <span class=\"highlight\">Settlement exchange:</span> Binance\n      "
+      }
+    }
+  }
+}

@@ -1,10 +1,18 @@
 import './Hero.scss';
 import { COUNTRIES } from '../../constants/methods';
+import { useTranslation } from 'react-i18next';
 
 export const Hero = () => {
+  const { t, i18n } = useTranslation();
+
   const scrollToCountries = () => {
     document.querySelector('.countries')?.scrollIntoView({ behavior: 'smooth' });
   };
+
+  const toggleLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
+  };
+
   return (
     <section className="hero">
       <div className="hero__background">
@@ -19,21 +27,38 @@ export const Hero = () => {
             <img src="/img/logo-mark.png" alt="SP" height={30} className="hero__logo-img" />
             SecurePay
           </div>
+          <div className="hero__lang-switcher">
+            <div className={`hero__lang-slider ${i18n.language === 'en' ? 'right' : 'left'}`} />
+            <button
+              className={`hero__lang-btn ${i18n.language === 'ru' ? 'active' : ''}`}
+              onClick={() => toggleLanguage('ru')}
+            >
+              RU
+            </button>
+            <button
+              className={`hero__lang-btn ${i18n.language === 'en' ? 'active' : ''}`}
+              onClick={() => toggleLanguage('en')}
+            >
+              EN
+            </button>
+          </div>
         </header>
 
         <main className="hero__main">
           <h1 className="hero__title">
-            БЕЗОПАСНОСТЬ - {' '}
-            <br className="hero__desktop-br" />
-            Превыше всего
+            {t('hero.title1')}
+            <br />
+            {t('hero.title2')}
           </h1>
           <p className="hero__subtitle">
-            Secure предоставляет платежные решения, в более чем <br className="hero__desktop-br" /> 20-ти
-            странах земного шара. «Запроцессим даже в<br className="hero__desktop-br" /> Северной Корее» -
-            Founder
+            {t('hero.subtitle1')}
+            <br className="hero__desktop-br" />
+            {t('hero.subtitle2')}
+            <br className="hero__desktop-br" />
+            {t('hero.subtitle3')}
           </p>
           <button className="hero__button" onClick={scrollToCountries}>
-            Перейти к офферам
+            {t('hero.cta')}
             <svg
               width="16"
               height="16"
@@ -53,7 +78,7 @@ export const Hero = () => {
         </main>
 
         <div className="hero__footer">
-          <span className="hero__scroll-text">ЛИСТАЙ ВНИЗ</span>
+          <span className="hero__scroll-text">{t('hero.scroll')}</span>
           <img src="/img/mouse.png" alt="Скролл вниз" className="hero__mouse" />
         </div>
       </div>
@@ -63,7 +88,7 @@ export const Hero = () => {
             <div key={i} className="hero__marquee-group">
               {COUNTRIES.map((country, index) => (
                 <span key={index} className="hero__marquee-item">
-                  {country.title}
+                  {t(`countries.${country.id}`, { defaultValue: country.title })}
                   <span className="hero__marquee-dot">•</span>
                 </span>
               ))}
